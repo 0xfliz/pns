@@ -86,5 +86,6 @@ def run_bot(private_key):
 
 # === Loop semua akun ===
 for i, pk in enumerate(PRIVATE_KEYS):
-    run_bot(pk)
-    print(Fore.MAGENTA + "-" * 60)
+    for _ in range(10):
+        run_bot(pk)
+        print(Fore.MAGENTA + "-" * 60)
